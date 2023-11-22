@@ -1,6 +1,6 @@
 from setuptools import setup
 
-setup(name='lima_latin',
+setup(name='tilima_latin',
       version='0.1',
       description='A Python package for something',
       url='http://github.com/CesarZarco/lima_latin_sqr',
