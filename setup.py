@@ -7,5 +7,5 @@ setup(name='tilima_latin',
       author='Yo y los rancios',
       author_email='za440752@uaeh.edu.mx',
       license='MIT',
-      packages=['tilima_square'],
+      packages=['tilima_latin'],
       zip_safe=False)
