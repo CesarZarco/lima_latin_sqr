@@ -1,1 +1,2 @@
-# lima_latin_sqr
+<h1 align="center"> Latin_Squares </h1>
+
