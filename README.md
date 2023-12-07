@@ -3,14 +3,14 @@
 [![CL.png](https://i.postimg.cc/PrwWzzHz/CL.png)](https://postimg.cc/PPdvdDPP)
 
 
-##Índice
+Índice
 
-*[Descripción del proyecto](#descripción-del-proyecto)
+1. [Descripción del proyecto](#descripción-del-proyecto)
 
-*[Funcionalidades del proyecto](#funcionalidades-del-proyecto)
+2. [Funcionalidades del proyecto](#funcionalidades-del-proyecto)
 
-*[Personas Contribuyentes](#personas-contribuyentes)
+3. [Personas Contribuyentes](#personas-contribuyentes)
 
-*[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
+4. [Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
 
-*[Conclusión](#conclusión)
+5. [Conclusión](#conclusión)
