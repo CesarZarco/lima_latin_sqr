@@ -26,4 +26,6 @@ El siguiente proyecto habla sobre los cuadrados latinos, mas especificamente, ah
 <h3 align="left"> Teoría sobre el proyecto </h3>
 <h4></h4>
 <h4 align="left">¿Qué es un cuadrado latino?</h4>
+
 [![xddd.jpg](https://i.postimg.cc/XqvbQDP7/xddd.jpg)](https://postimg.cc/62FgQzwD)
+<h6 align="left"> Cuadro del pintor suizo Richard Paul Lohse, que bajo el título “Komplementäre Gruppen durch sechs horizontale systematische Farbreihen” -Grupos complementarios formados por seis series sistemáticas horizontales de color- (1950 y 1976), recoge un cuadrado latino de orden 6 cuyos símbolos son los colores. </h6>
