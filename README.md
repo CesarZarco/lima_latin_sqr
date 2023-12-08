@@ -28,11 +28,16 @@ El siguiente proyecto habla sobre los cuadrados latinos, mas especificamente, ah
 <h3 align="left">¿Qué es un cuadrado latino?</h3>
 
 [![xddd.jpg](https://i.postimg.cc/XqvbQDP7/xddd.jpg)](https://postimg.cc/62FgQzwD)
-<h6 align="left"> Cuadro del pintor suizo Richard Paul Lohse, que bajo el título “Komplementäre Gruppen durch sechs horizontale systematische Farbreihen” -Grupos complementarios formados por seis series sistemáticas horizontales de color- (1950 y 1976), recoge un cuadrado latino de orden 6 cuyos símbolos son los colores. </h6>
-
-<h4> Un cuadrado latino de orden n es un retículo cuadrado de tamaño n x n en el que cada entrada es un número del 1 al n (el nombre de cuadrado latino viene de las letras del alfabeto latino que utilizó el matemático suizo Leonhard Euler), de tal forma que cada número de {1,…, n} aparece una vez, y sólo una vez, en cada fila y cada columna. </h4>
-
+<h6> </h6>
+<sub> Cuadro del pintor suizo Richard Paul Lohse, que bajo el título “Komplementäre Gruppen durch sechs horizontale systematische Farbreihen” -Grupos complementarios formados por seis series sistemáticas horizontales de color- (1950 y 1976), recoge un cuadrado latino de orden 6 cuyos símbolos son los colores. </sub>
+<h6> </h6>
+<h6> </h6>
+Un cuadrado latino de orden n es un retículo cuadrado de tamaño n x n en el que cada entrada es un número del 1 al n (el nombre de cuadrado latino viene de las letras del alfabeto latino que utilizó el matemático suizo Leonhard Euler), de tal forma que cada número de {1,…, n} aparece una vez, y sólo una vez, en cada fila y cada columna.
+<h6> </h6>
 <h3> El problema de los 36 oficiales y la conjetura de Euler </h3>
+<h2></h2>
+El problema de los 36 oficiales descrito por Leonhard Euler a finales del siglo XVIII; ¿es posible disponer a treinta y seis oficiales de seis regimientos distintos y de cada uno de los seis grados, en un cuadrado de 6x6 de forma que no coincidan dos oficiales del mismo rango o del mismo regimiento en ninguna fila y en ninguna columna?
+<h6></h6>
 
 
 
