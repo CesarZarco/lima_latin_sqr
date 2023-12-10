@@ -1,13 +1,13 @@
 from itertools import permutations, combinations
-from sympy import Matrix, init_printing
-init_printing(use_latex=True)
 
-def inicial(n):
-    for i in range(1,n+1):
-        if i == 1:
-            M = [list((range(1,n+1)))]
-        else:
-            S = [0]*n
-            S[0] = i
-            M.append(S)
-    return M
+def square_0(N):
+    """
+    This function is a simple utility for creating zero-filled square matrices of a specified order N.
+
+    Parameters:
+    - N (int): The order of the square matrix required.
+
+    Returns:
+    - square_0(N): List of order N, which elements are all lists of order N with zeros.
+    """
+    return [[0 for _ in range(N)] for _ in range(N)]
