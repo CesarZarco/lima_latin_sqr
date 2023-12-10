@@ -1,36 +1,54 @@
-import itertools
-from sympy import Matrix, init_printing
-init_printing(use_latex=True)
+from itertools import permutations
 
-def generar_todos_los_cuadrados_latinos(n):
-    # Genera una lista de números del 1 al n
-    numeros = list(range(1, n + 1))
+def all_square_permutations(n):
+    """
+    Generate a list of matrices of order N, all of which are Latin squares, using permutations from itertools.
 
-    # Genera todas las permutaciones posibles de esa lista
-    cuadrados_latinos = []
-    for permutacion in itertools.permutations(numeros):
+    Parameters:
+    - N (int): The order of the matrix and the elements it will contain (1, 2, ..., n).
 
-        # Crea un cuadrado latino al añadir la permutación a sí misma, pero en orden inverso
-        cuadrado_latino = Matrix([list(permutacion[i:] + permutacion[:i]) for i in range(n)])
+    Returns:
+    - all_square_permutations(N): List of Latin squares that come from permutations as rows.
+    
+    Example
+    cuadrados_latinos = all_square_permutations(3)
+    cuadrados_latinos
+    [[[1, 2, 3], [2, 3, 1], [3, 1, 2]],
+     [[1, 2, 3], [3, 1, 2], [2, 3, 1]],
+     [[1, 3, 2], [3, 2, 1], [2, 1, 3]],
+     [[1, 3, 2], [2, 1, 3], [3, 2, 1]],
+     [[2, 1, 3], [1, 3, 2], [3, 2, 1]],
+     [[2, 1, 3], [3, 2, 1], [1, 3, 2]],
+     [[2, 3, 1], [3, 1, 2], [1, 2, 3]],
+     [[2, 3, 1], [1, 2, 3], [3, 1, 2]],
+     [[3, 1, 2], [1, 2, 3], [2, 3, 1]],
+     [[3, 1, 2], [2, 3, 1], [1, 2, 3]],
+     [[3, 2, 1], [2, 1, 3], [1, 3, 2]],
+     [[3, 2, 1], [1, 3, 2], [2, 1, 3]]]
+    """
 
-        # Verifica si el cuadrado latino ya ha sido generado
-        # Si el cuadrado latino ya ha sido generado, lo omitirá
-        if cuadrado_latino not in cuadrados_latinos:
-            cuadrados_latinos.append(cuadrado_latino)
+   
+    # Generate a list of numbers form 1 to N
+    numbers = list(range(1, n + 1))
 
-        cuadrado_latino = Matrix([list(permutacion[i:] + permutacion[:i]) for i in range(n, 0, -1)])
-        # Verifica si el cuadrado latino ya ha sido generado
-        # Si el cuadrado latino ya ha sido generado, lo omitirá
-        if cuadrado_latino not in cuadrados_latinos:
-            cuadrados_latinos.append(cuadrado_latino)
+    # With itertools generate all the permutations of the list
+    latin_sqrs = []
+    for permutation in permutations(numbers):
 
-    # Devuelve la lista de cuadrados latinos generados
-    return cuadrados_latinos
+        # Make a latin square using a permutation, reorder the same permutaion moving the elements one
+        # position then insert the new permutation as a row
+        latin_sqr = [list(permutation[i:] + permutation[:i]) for i in range(n)]
 
-# Ejemplo
-cuadrados_latinos = generar_todos_los_cuadrados_latinos(3)
-cuadrados_latinos
-# Imprime los cuadrados latinos generados
-#print(cuadrados_latinos)
+        #Verifies whether the Latin square has been generated before.
+        #If it has not been generated before, it will be added to the list latin_sqrs
+        if latin_sqr not in latin_sqrs:
+            latin_sqrs.append(latin_sqr)
 
-#len(cuadrados_latinos)
+        # Does the same than in the lines befor but in the inverse order
+        latin_sqr = [list(permutation[i:] + permutation[:i]) for i in range(n, 0, -1)]
+
+        if latin_sqr not in latin_sqrs:
+            latin_sqrs.append(latin_sqr)
+
+    # Return the list
+    return latin_sqrs
