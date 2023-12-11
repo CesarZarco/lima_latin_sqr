@@ -42,6 +42,13 @@ Problemas como este ya se habían planteado anteriormente como el de el frances 
 <h6> </h6>
 Euler pudo resolver varios cuadrados latinos incluso de orden mas grande que 6, pero fue incapaz de resolver el de 6 x 6, es decir, el de los 36 oficiales, así que se puso a pensar la situación en general, de modo que conjeturó que no existe solución cuando el orden es un número par n ≡ 2 (mod 4) (Recordemos lo que significa 'ser congruente': n ≡ 2 (mod 4), quiere decir que n – 2 es un múltiplo de 4, o sea n no podía ser 2, 6, 10, 14, 16, 22, …). En resumen, que la disposición de n² oficiales con las condiciones descritas sólo era posible cuando n fuera impar o múltiplo de 4.
 <h6></h6>
+En ambos problemas debemos compaginar dos condiciones. En uno el ejército y el rango, y en el otro, la carta y el palo al que pertenece.
+<h6></h6>
+Los dos cuadrados latinos que forman un cuadrado greco-latino se dice que son cuadrados latinos ortogonales.
+<h6></h6>
+[![Imagen-2-580x167.png](https://i.postimg.cc/jStvXh3m/Imagen-2-580x167.png)](https://postimg.cc/HVvQWbg9)
+<h6></h6>
+<sub> Ejemplo de 2 cuarados latinos mutuamente ortogonales </sub>
 
 ## Funcionalidad del proyecto
 
