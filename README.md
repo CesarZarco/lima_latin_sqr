@@ -46,6 +46,7 @@ En ambos problemas debemos compaginar dos condiciones. En uno el ejército y el 
 <h6></h6>
 Los dos cuadrados latinos que forman un cuadrado greco-latino se dice que son cuadrados latinos ortogonales.
 <h6></h6>
+
 [![Imagen-2-580x167.png](https://i.postimg.cc/jStvXh3m/Imagen-2-580x167.png)](https://postimg.cc/HVvQWbg9)
 <h6></h6>
 <sub> Ejemplo de 2 cuarados latinos mutuamente ortogonales </sub>
