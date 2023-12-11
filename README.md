@@ -51,6 +51,38 @@ Los dos cuadrados latinos que forman un cuadrado greco-latino se dice que son cu
 <h6></h6>
 <sub> Ejemplo de 2 cuarados latinos mutuamente ortogonales </sub>
 
+<h3 align="left"> Fundamentos matematicos </h3>
+Definición: Ortogonal
+<h6></h6>
+Dos cuadrados latinos S1 y S2 son ortogonales si cuando miramos cada posición en turno y consideramos el par ordenado formado por la entrada de S1 en esa posición, y la entrada de S2 en esa posición, aparece cada par ordenado posible.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Funcionalidad del proyecto
 
 
