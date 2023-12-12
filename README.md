@@ -49,12 +49,23 @@ Los dos cuadrados latinos que forman un cuadrado greco-latino se dice que son cu
 
 [![Imagen-2-580x167.png](https://i.postimg.cc/jStvXh3m/Imagen-2-580x167.png)](https://postimg.cc/HVvQWbg9)
 <h6></h6>
-<sub> Ejemplo de 2 cuarados latinos mutuamente ortogonales </sub>
+<sub> fig. 3 Ejemplo de 2 cuarados latinos mutuamente ortogonales </sub>
 
 <h3 align="left"> Fundamentos matematicos </h3>
-Definición: Ortogonal
+<h4>Definición: Ortogonal</h4>
 <h6></h6>
 Dos cuadrados latinos S1 y S2 son ortogonales si cuando miramos cada posición en turno y consideramos el par ordenado formado por la entrada de S1 en esa posición, y la entrada de S2 en esa posición, aparece cada par ordenado posible.
+<h6></h6>
+<h4>Definición: Mutuamente ortogonal</h4>
+<h6></h6>
+Un conjunto de cuadrados latinos es mutuamente ortogonal si cada par distinto de cuadrados latinos en el conjunto son ortogonales. Llamamos a tal conjunto, un conjunto de MOLS (para Cuadrados Latinos Mutuamente Ortogonales).
+<h6></h6>
+La pregunta natural que se plantea en este contexto es, ¿cuántos cuadrados latinos puede haber en un conjunto de MOLS?
+<h6></h6>
+<h4>Teorema 16.2.1<h/4>
+<h6></h6>
+Si $\`S`$ es un conjunto de MOLS de orden n , entonces $\`|S|≤n−1`$.
+
 
 
 
