@@ -1,54 +1,50 @@
 from itertools import permutations
 
-def permutaciones_validas(n, m, lista_numeros):
+def possible_row(n, m, number_list):
     """
-    Genera permutaciones válidas de números del 1 al 'n' excluyendo el número 'm',
-    y verifica que estas permutaciones sean diferentes de las listas de 'lista_numeros'.
+    Generate all possible rows for a Latin square matrix in its standard form.
 
-    Parametros:
-    - n (int): El rango de números para generar permutaciones (1, 2, ..., n).
-    - m (int): El número que debe excluirse de las permutaciones.
-    - lista_numeros (list): Lista de listas que representan números a comparar con las permutaciones.
+    Given the order of the matrix 'n', the row index 'm' to fill, and a list of
+    'number_list' representing the previous rows in the matrix, this function generates
+    all possible rows that maintain the Latin square property.
+
+    Parameters:
+    - n (int): The order of the matrix and the numbers that will appear (1, ..., n).
+    - m (int): The row to fill, excluding a specific number.
+    - number_list (list): A list of previous rows in the matrix.
 
     Returns:
-    - validas (list): Lista de permutaciones válidas que no coinciden con las listas de 'lista_numeros'.
+    - list: List of rows allowed to maintain the matrix as a Latin square.
+
+    Example:
+    >>> possible_row(3, 2, [[1, 2, 3], [2, 3, 1]])
+    [[3, 1, 2], [3, 2, 1]]
+
+    Raises:
+    - ValueError: If n is not a positive integer or m is not a valid row index.
     """
-    
-    # Generar lista de números del 1 al 'n' excluyendo 'm'
-    auxiliares = [i for i in range(1, n + 1) if i != m]
-    validas = []  # Lista para almacenar permutaciones válidas
-    permutaciones = []  # Lista para almacenar todas las permutaciones posibles
-    
-    # Generar todas las permutaciones posibles de la lista 'auxiliares'
-    for permutacion in permutations(auxiliares):
+
+    # Validate inputs
+    if not isinstance(n, int) or n <= 0:
+        raise ValueError("n must be a positive integer.")
+    if not isinstance(m, int) or m < 0 or m > n:
+        raise ValueError("m must be a valid row index for a matrix of order n.")
+
+    # Generate a list of numbers from 1 to 'n' excluding 'm'
+    aux = [i for i in range(1, n + 1) if i != m]
+    possible = []
+    all_rows = []
+
+    # Generate all rows that can be made by permuting the elements of aux
+    for permutation in permutations(aux):
         for i in range(n):
-            # Rotar la permutación y convertirla en lista
-            permutaciones.append(list(permutacion[i:] + permutacion[:i]))
+            all_rows.append(list(permutation[i:] + permutation[:i]))
 
-    # Verificar la validez de cada permutación con respecto a 'lista_numeros'
-    for permutacion in permutaciones:
-        for numeros in lista_numeros:
-            validez = True
-
-            # Verificar cada número en la permutación
-            for i in range(len(numeros)):
-                if permutacion[i] == numeros[i]:
-                    validez = False
-                    break
-
-            # Si se encuentra una coincidencia, salir del bucle interno
-            if not validez:
-                break
-
-        # Si la permutación es válida y no está en la lista de permutaciones válidas, agregarla
-        if validez and list(permutacion) not in validas:
-            validas.append(list(permutacion))
-
-    return validas
-
-# Ejemplo de uso:
-n = 4
-m = 2
-lista_numeros = [[1, 3, 2, 4], [4, 1, 3, 2]]
-resultado = permutaciones_validas(n, m, lista_numeros)
-print(resultado)
+    # Verify if a row is permited, if it is then it will be added to the possible list
+    for row in all_rows:
+        permited = all(row[i] != number[i] for i in range(n - 1) for number in number_list)
+        
+        if permited and row not in possible:
+            possible.append(list(row))
+    
+    return possible
