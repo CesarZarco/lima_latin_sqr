@@ -10,9 +10,9 @@
 
 2. [Project development](#project-development)
 
-3. [Project Functionality](#project-functionality)
+3. [Project functionality](#project-functionality)
 
-4. [Autors](#Autors)
+4. [Autors](#autors)
 
 5. [Conclusion](#Conclusion)
 
@@ -114,7 +114,7 @@ If one Latin square is orthogonal to another, internal operations (permutation b
 
 
 
-##Autors
+## Autors
 | [<img src="https://avatars.githubusercontent.com/u/141696762?v=4" width=115><br><sub>Cesar Augusto Zarco Moreno</sub>](https://github.com/CesarZarco) |  [<img src="https://avatars.githubusercontent.com/u/141844905?v=4" width=115><br><sub>Omar Samuel Pérez Pérez</sub>](https://github.com/OS37) |  [<img src="https://avatars.githubusercontent.com/u/141780211?v=4" width=115><br><sub>Juan Carlos Haro Ortega</sub>](https://github.com/jcar2905) |
 | :---: | :---: | :---: |
 
