@@ -10,11 +10,13 @@
 
 2. [Project development](#project-development)
 
-3. [Project functionality](#project-functionality)
+3. [Project funtionality](#project-functionality)
 
 4. [Autors](#autors)
 
-5. [Conclusion](#Conclusion)
+5. [Conclusion](#conclusion)
+
+
 
 
 ## Project description
