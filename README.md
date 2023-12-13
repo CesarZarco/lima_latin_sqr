@@ -6,7 +6,7 @@
 <h3></h3>
 Índice
 
-1. [Descripción del proyecto](#descripción-del-proyecto)
+1. [Project description](#project-description)
 
 2. [Desarrollo del proyecto](#desarrollo-del-proyecto)
 
@@ -17,27 +17,26 @@
 5. [Conclusión](#conclusión)
 
 
-## Descripción del proyecto
+## Project description
 <h4></h4>
-El siguiente proyecto habla sobre los cuadrados latinos, mas especificamente, ahondaremos en la ortogonalidad de estos hasta los de tamaño n=6, queremos comprobar que basta con encontrar los cuadrados latinos reducidos y que a partir de estos podemos conocer el número completo de cuadrados latinos de tamaño n.
-Además queremos que nuestro programa sea un apoyo para comprobar que no existen 2 cuadrados latinos mutuamente ortogonales de orden 6.
 
+The following project is about Latin squares, specifically delving into the orthogonality of these squares up to size n=6. We aim to verify that it is sufficient to find reduced Latin squares and that from these, we can determine the total number of Latin squares of size n. Additionally, we want our program to serve as a tool to confirm the non-existence of two mutually orthogonal Latin squares of order 6.
 
 ## Desarrollo del proyecto
 <h4></h4>
-<h3 align="left">¿Qué es un cuadrado latino?</h3>
+<h3 align="left"> What is a Latin Square?</h3>
 
 [![xddd.jpg](https://i.postimg.cc/XqvbQDP7/xddd.jpg)](https://postimg.cc/62FgQzwD)
 <h6> </h6>
-<sub> fig.2 Cuadro del pintor suizo Richard Paul Lohse, que bajo el título “Komplementäre Gruppen durch sechs horizontale systematische Farbreihen” -Grupos complementarios formados por seis series sistemáticas horizontales de color- (1950 y 1976), recoge un cuadrado latino de orden 6 cuyos símbolos son los colores. </sub>
+<sub> Fig. 2 Square by Swiss painter Richard Paul Lohse, titled "Komplementäre Gruppen durch sechs horizontale systematische Farbreihen" - Complementary groups formed by six horizontal systematic color series - (1950 and 1976), displays a Latin square of order 6 where symbols are colors.  </sub>
 <h6> </h6>
 <h6> </h6>
-Un cuadrado latino de orden n es un retículo cuadrado de tamaño n x n en el que cada entrada es un número del 1 al n (el nombre de cuadrado latino viene de las letras del alfabeto latino que utilizó el matemático suizo Leonhard Euler), de tal forma que cada número de {1,…, n} aparece una vez, y sólo una vez, en cada fila y cada columna.
-Si en la imagen anterior a cada color le asignamos un número tendremos ahora un cuadrado latino con la conjetura que deescribimos, o vease la fig. 1 para una mejor comprensión.
+A Latin square of order n is an n x n square grid where each entry is a number from 1 to n (named Latin square due to the Latin alphabet letters used by Swiss mathematician Leonhard Euler). Each number from {1,...,n} appears exactly once in each row and each column.
+If we assign a number to each color in the previous image, we will now have a Latin square with the conjecture we described, or see fig. 1 for a better understanding.
 <h6> </h6>
-<h3> El problema de los 36 oficiales y la conjetura de Euler </h3>
+<h3> The problem of the 36 officers and Euler's conjecture </h3>
 <h2></h2>
-El problema de los 36 oficiales descrito por Leonhard Euler a finales del siglo XVIII; ¿es posible disponer a treinta y seis oficiales de seis regimientos distintos y de cada uno de los seis grados, en un cuadrado de 6x6 de forma que no coincidan dos oficiales del mismo rango o del mismo regimiento en ninguna fila y en ninguna columna?
+The problem of the 36 officers described by Leonhard Euler in the late 18th century: Can thirty-six officers from six different regiments and each of the six ranks be arranged in a 6x6 square so that no two officers of the same rank or regiment coincide in any row or column?
 <h6> </h6>
 Problemas como este ya se habían planteado anteriormente como el de el frances Jacques Ozanam el cual plantea colocar los reyes, reinas, jotas y ases de una baraja de cartas, formando un cuadrado 4 x 4, tal que cada fila y cada columna contenga una vez y solo una vez, cada una de las figuras y cada uno de los palos.
 <h6> </h6>
