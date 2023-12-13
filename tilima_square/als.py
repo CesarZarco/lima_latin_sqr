@@ -1,6 +1,28 @@
 TOTAL_SOLUTIONS = 0  # Variable to track the total solutions found
 SOLUTIONS = []  # List to store the found solutions
 
+
+def total_latin_square(N):
+    """
+    Main function to print the Latin squares.
+
+    Args:
+    - N (int): Order of the Latin squares required.
+
+    This function only calls latin_square to show results
+    """
+    
+    global TOTAL_SOLUTIONS, SOLUTIONS
+    square = [[0 for _ in range(N)] for _ in range(N)]
+    print(f'Total solutions found: {latin_square(square,1)}')
+    print(f'Solutions found: ')
+    for solution in SOLUTIONS:
+        print(solution)
+        
+    # Reset results
+    TOTAL_SOLUTIONS = 0
+    SOLUTIONS = [] 
+
 def latin_square(square, color):
     """
     Main function to initiate the generation of a Latin square.
