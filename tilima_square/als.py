@@ -8,7 +8,7 @@ def latin_square(square, color):
 
     This function uses backtracking to explore all possible completions of the Latin square.
     """
-    global TOTAL_SOLUTIONS, SOLUTIONS
+    global TOTAL_SOLUTIONS, SOLUTIONS, N
 
     for possible_solution in completions(square, color):
         if possible(possible_solution):
