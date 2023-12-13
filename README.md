@@ -51,26 +51,25 @@ The two Latin squares forming a Greco-Latin square are said to be mutually ortho
 <h6></h6>
 <sub> Fig. 3 Example of 2 mutually orthogonal Latin squares </sub>
 
-<h3 align="left"> Fundamentos matematicos </h3>
-<h4>Definición: Ortogonal</h4>
+<h3 align="left"> Mathematical Foundations </h3>
+<h4> Definition: Orthogonal </h4>
 <h6></h6>
-Dos cuadrados latinos S1 y S2 son ortogonales si cuando miramos cada posición en turno y consideramos el par ordenado formado por la entrada de S1 en esa posición, y la entrada de S2 en esa posición, aparece cada par ordenado posible.
+Two Latin squares S1 and S2 are orthogonal if, when we look at each position in turn and consider the ordered pair formed by the entry of S1 in that position and the entry of S2 in that position, every possible ordered pair appears.
 <h6></h6>
-<h4>Definición: Mutuamente ortogonal</h4>
+<h4> Definition: Mutually Orthogonal </h4>
 <h6></h6>
-Un conjunto de cuadrados latinos es mutuamente ortogonal si cada par distinto de cuadrados latinos en el conjunto son ortogonales. Llamamos a tal conjunto, un conjunto de MOLS (para Cuadrados Latinos Mutuamente Ortogonales).
+A set of Latin squares is mutually orthogonal if every distinct pair of Latin squares in the set is orthogonal. We call such a set a set of MOLS (Mutually Orthogonal Latin Squares).
 <h6></h6>
-¿Cuántos cuadrados latinos puede haber en un conjunto de MOLS?, para tratar de resolver esta pregunta usaremos algunos resultados en los que nos apoyamos para la elaboración de nuestro proyecto.
+How many Latin squares can exist in a set of MOLS? To try to answer this question, we will use some results that we rely on for the development of our project.
 <h6></h6>
-<h3>Resultados<h/3>
+<h3>Results<h/3>
 <h6></h6>
-<h4> Resultado 1 </h4>
-Si S es un conjunto de MOLS de orden n, entonces |S|≤n−1.
-<h4> Resultado 2</h4>
-No existen 2 cuadrados latinos Mutuamente ortogonalda de orden 6
-<h4>Resultado 3</h4>
-Si un cuadrado latino es ortogonal a otro, las operaciones internas (permutacion entre filas o columnas), nos darán cómo resultado un cuadrado latino diferente que sigue conservando la ortogonalidad 
-
+<h4> Result 1 </h4>
+If S is a set of MOLS of order n, then |S| ≤ n−1.
+<h4> Result 2</h4>
+There do not exist 2 mutually orthogonal Latin squares of order 6.
+<h4>Result 3</h4>
+If one Latin square is orthogonal to another, internal operations (permutation between rows or columns) will result in a different Latin square that still maintains orthogonality.
 
 
 
