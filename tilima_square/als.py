@@ -1,3 +1,6 @@
+TOTAL_SOLUTIONS = 0  # Variable to track the total solutions found
+SOLUTIONS = []  # List to store the found solutions
+
 def latin_square(square, color):
     """
     Main function to initiate the generation of a Latin square.
@@ -9,9 +12,6 @@ def latin_square(square, color):
     This function uses backtracking to explore all possible completions of the Latin square.
     """
     global TOTAL_SOLUTIONS, SOLUTIONS
-
-    TOTAL_SOLUTIONS = 0  # Variable to track the total solutions found
-    SOLUTIONS = []  # List to store the found solutions
 
     N = len(square)
 
