@@ -22,6 +22,13 @@
 
 The following project is about Latin squares, specifically delving into the orthogonality of these squares up to size n=6. We aim to verify that it is sufficient to find reduced Latin squares and that from these, we can determine the total number of Latin squares of size n. Additionally, we want our program to serve as a tool to confirm the non-existence of two mutually orthogonal Latin squares of order 6.
 
+
+
+
+
+
+
+
 ## Project development
 <h4></h4>
 <h3 align="left"> What is a Latin Square?</h3>
@@ -95,7 +102,6 @@ If one Latin square is orthogonal to another, internal operations (permutation b
 
 
 
-
 ## Project functionality
 - Generate Latin squares of order n≤6.
 - Find mutually orthogonal Latin squares (MOLS) of order 3≤n≤5.
@@ -108,8 +114,7 @@ If one Latin square is orthogonal to another, internal operations (permutation b
 
 
 
-
-## Autors
+##Autors
 | [<img src="https://avatars.githubusercontent.com/u/141696762?v=4" width=115><br><sub>Cesar Augusto Zarco Moreno</sub>](https://github.com/CesarZarco) |  [<img src="https://avatars.githubusercontent.com/u/141844905?v=4" width=115><br><sub>Omar Samuel Pérez Pérez</sub>](https://github.com/OS37) |  [<img src="https://avatars.githubusercontent.com/u/141780211?v=4" width=115><br><sub>Juan Carlos Haro Ortega</sub>](https://github.com/jcar2905) |
 | :---: | :---: | :---: |
 
