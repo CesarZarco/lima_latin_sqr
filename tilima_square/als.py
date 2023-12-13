@@ -1,17 +1,15 @@
-def latin_square(square, color, n):
+def latin_square(square, color):
     """
     Main function to initiate the generation of a Latin square.
 
     Args:
     - square (list): The Latin square under construction.
     - color (int): The current color being placed in the square.
-    - n (int): order of latin square
 
     This function uses backtracking to explore all possible completions of the Latin square.
     """
     global TOTAL_SOLUTIONS, SOLUTIONS, N
-
-    N = n  # Size of the Latin square
+    
     TOTAL_SOLUTIONS = 0  # Variable to track the total solutions found
     SOLUTIONS = []  # List to store the found solutions
 
@@ -23,7 +21,7 @@ def latin_square(square, color, n):
             else:
                 if completable(possible_solution):
                     if color + 1 <= N:
-                        latin_square(possible_solution, color + 1, n)
+                        latin_square(possible_solution, color + 1)
 
 def is_solution(square):
     """
