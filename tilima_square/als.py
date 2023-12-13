@@ -131,3 +131,5 @@ def completions_recursive(completions_list, square, color, row):
                 else:
                     completions_list.append([row[:] for row in square])
             square[row][j] = 0
+
+    return TOTAL_SOLUTIONS
