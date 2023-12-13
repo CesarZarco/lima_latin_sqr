@@ -6,7 +6,7 @@ def square_permutations(n):
     Generate a list of matrices of order N, all of which are Latin squares, using permutations from itertools.
     It does not show all possible latin squares of that order.
 
-    Parameters:
+    Args:
     - N (int): The order of the matrix and the elements it will contain (1, 2, ..., n).
 
     Returns:
@@ -50,7 +50,7 @@ def is_latin_square_columns(matrix):
     """
     Verify if a matrix from sympy is a Latin square. This is an auxiliary function for all_square_permutations(n).
 
-    Parameters:
+    Args:
     - matrix (sympy.Matrix): It must not have repetitions of elements in the same row.
 
     Returns:
@@ -72,7 +72,7 @@ def all_square_permutations(n):
     """
     Generate a the list of all latin squares of order n.
 
-    Parameters:
+    Args:
     - n (int): The order of the matrix and the elements it will contain (1, 2, ..., n).
 
     Returns:
