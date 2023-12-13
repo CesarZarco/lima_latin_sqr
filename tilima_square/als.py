@@ -5,6 +5,7 @@ def latin_square(square, color, N):
     Args:
     - square (list): The Latin square under construction.
     - color (int): The current color being placed in the square.
+    - order of latin square
 
     This function uses backtracking to explore all possible completions of the Latin square.
     """
@@ -18,7 +19,7 @@ def latin_square(square, color, N):
             else:
                 if completable(possible_solution):
                     if color + 1 <= N:
-                        latin_square(possible_solution, color + 1)
+                        latin_square(possible_solution, color + 1, N)
 
 def is_solution(square):
     """
