@@ -1,3 +1,5 @@
+Este archivo contiene un código de un ejmeplo de como usar la función latin_square() de asl.py
+
 N = 3  # Size of the Latin square
 TOTAL_SOLUTIONS = 0  # Variable to track the total solutions found
 SOLUTIONS = []  # List to store the found solutions
