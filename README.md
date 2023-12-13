@@ -8,9 +8,9 @@
 
 1. [Project description](#project-description)
 
-2. [Project development](#Project-developmnet)
+2. [Project development](#project-developmnet)
 
-3. [Project Functionality](#project-funcionality)
+3. [Project Functionality](#project-functionality)
 
 4. [Autors](#autors)
 
