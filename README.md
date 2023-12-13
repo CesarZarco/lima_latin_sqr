@@ -20,6 +20,7 @@
 ## Descripción del proyecto
 <h4></h4>
 El siguiente proyecto habla sobre los cuadrados latinos, mas especificamente, ahondaremos en la ortogonalidad de estos hasta los de tamaño n=6, queremos comprobar que basta con encontrar los cuadrados latinos reducidos y que a partir de estos podemos conocer el número completo de cuadrados latinos de tamaño n.
+Además queremos que nuestro programa sea un apoyo para comprobar que no existen 2 cuadrados latinos mutuamente ortogonales de orden 6.
 
 
 ## Desarrollo del proyecto
@@ -64,12 +65,12 @@ Un conjunto de cuadrados latinos es mutuamente ortogonal si cada par distinto de
 <h6></h6>
 <h3>Resultados<h/3>
 <h6></h6>
-<h4>Teorema 1<h/1>
-Si S es un conjunto de MOLS de orden n , entonces |S|≤n−1.
-
-
-
-
+<h4> Resultado 1 </h4>
+Si S es un conjunto de MOLS de orden n, entonces |S|≤n−1.
+<h4> Resultado 2</h4>
+No existen 2 cuadrados latinos Mutuamente ortogonalda de orden 6
+<h4>Resultado 3</h4>
+Si un cuadrado latino es ortogonal a otro, las operaciones internas (permutacion entre filas o columnas), nos darán cómo resultado un cuadrado latino diferente que sigue conservando la ortogonalidad 
 
 
 
