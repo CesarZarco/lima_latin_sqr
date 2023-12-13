@@ -1,4 +1,4 @@
-def latin_square(square, color):
+def latin_square(square, color, N):
     """
     Main function to initiate the generation of a Latin square.
 
