@@ -1,0 +1,9 @@
+N = 3  # Size of the Latin square
+TOTAL_SOLUTIONS = 0  # Variable to track the total solutions found
+SOLUTIONS = []  # List to store the found solutions
+# Initialize the square with zeros
+square = [[0 for _ in range(N)] for _ in range(N)]
+# Call the main function to generate Latin squares
+latin_square(square, 1)
+# Print the total number of solutions found
+print(f'Total solutions found: {TOTAL_SOLUTIONS}')
