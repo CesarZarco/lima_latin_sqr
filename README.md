@@ -8,13 +8,13 @@
 
 1. [Project description](#project-description)
 
-2. [Project development](#project-developmnet)
+2. [Project development](#project-development)
 
 3. [Project Functionality](#project-functionality)
 
-4. [Autors](#autors)
+4. [Autors](#Autors)
 
-5. [Conclusion](#conclusion)
+5. [Conclusion](#Conclusion)
 
 
 ## Project description
