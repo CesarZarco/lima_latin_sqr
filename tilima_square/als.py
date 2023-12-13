@@ -11,7 +11,7 @@ def latin_square(square, color):
 
     This function uses backtracking to explore all possible completions of the Latin square.
     """
-    global TOTAL_SOLUTIONS, SOLUTIONS, N
+    global TOTAL_SOLUTIONS, SOLUTIONS
 
     N = len(square)
 
@@ -47,6 +47,8 @@ def completable(square):
     Returns:
     - bool: True if the square is completable, False otherwise.
     """
+    N = len(square)
+
     for i in range(N):
         for j in range(N):
             if square[i][j] == 0:
@@ -63,6 +65,8 @@ def possible(square):
     Returns:
     - bool: True if the square is a valid Latin square, False otherwise.
     """
+    N = len(square)
+    
     for i in range(N):
         # Check columns
         cont = {x: 0 for x in range(1, N + 1)}
@@ -94,6 +98,7 @@ def completions(square, color):
     - list: List of possible completions for the row.
     """
     completions_list = []
+    N = len(square)
 
     for j in range(N):
         if square[0][j] == 0:
@@ -115,6 +120,8 @@ def completions_recursive(completions_list, square, color, row):
 
     This function explores all possible completions for a given row and color.
     """
+    N = len(square)
+    
     for j in range(N):
         if square[row][j] == 0:
             square[row][j] = color
