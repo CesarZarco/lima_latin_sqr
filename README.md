@@ -60,11 +60,14 @@ Dos cuadrados latinos S1 y S2 son ortogonales si cuando miramos cada posición e
 <h6></h6>
 Un conjunto de cuadrados latinos es mutuamente ortogonal si cada par distinto de cuadrados latinos en el conjunto son ortogonales. Llamamos a tal conjunto, un conjunto de MOLS (para Cuadrados Latinos Mutuamente Ortogonales).
 <h6></h6>
-La pregunta natural que se plantea en este contexto es, ¿cuántos cuadrados latinos puede haber en un conjunto de MOLS?
+¿Cuántos cuadrados latinos puede haber en un conjunto de MOLS?, para tratar de resolver esta pregunta usaremos algunos resultados en los que nos apoyamos para la elaboración de nuestro proyecto.
 <h6></h6>
-<h4>Teorema 16.2.1<h/4>
+<h3>Resultados<h/3>
 <h6></h6>
-Si $\`S`$ es un conjunto de MOLS de orden n , entonces $\`|S|≤n−1`$.
+<h4>Teorema 1<h/1>
+Si S es un conjunto de MOLS de orden n , entonces |S|≤n−1.
+
+
 
 
 
