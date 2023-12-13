@@ -1,5 +1,5 @@
 def check_orthogonality(square_list):
-"""
+    """
     Checks the orthogonality of a list of 3x3 Latin squares, since to verify that two squares are MOLS, n-1 elements are taken per entry.
 
     Arguments:
@@ -16,7 +16,7 @@ def check_orthogonality(square_list):
     Example usage:
     check_orthogonality(SOLUTIONS)
     
-"""
+    """
     n = len(square_list[0])
     orthogonal_pairs = []
     total_pairs = 0
