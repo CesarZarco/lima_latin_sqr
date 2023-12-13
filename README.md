@@ -2,13 +2,13 @@
 
 [![CL.png](https://i.postimg.cc/PrwWzzHz/CL.png)](https://postimg.cc/PPdvdDPP)
 <h6> </h6>
-<sub> fig.1 </sub>
+<sub> Fig.1 </sub>
 <h3></h3>
 Índice
 
 1. [Project description](#project-description)
 
-2. [Desarrollo del proyecto](#desarrollo-del-proyecto)
+2. [Project development](#Project-developmnet)
 
 3. [Funcionalidad del proyecto](#funcionalidad-del-proyecto)
 
@@ -22,7 +22,7 @@
 
 The following project is about Latin squares, specifically delving into the orthogonality of these squares up to size n=6. We aim to verify that it is sufficient to find reduced Latin squares and that from these, we can determine the total number of Latin squares of size n. Additionally, we want our program to serve as a tool to confirm the non-existence of two mutually orthogonal Latin squares of order 6.
 
-## Desarrollo del proyecto
+## Project development
 <h4></h4>
 <h3 align="left"> What is a Latin Square?</h3>
 
@@ -38,18 +38,18 @@ If we assign a number to each color in the previous image, we will now have a La
 <h2></h2>
 The problem of the 36 officers described by Leonhard Euler in the late 18th century: Can thirty-six officers from six different regiments and each of the six ranks be arranged in a 6x6 square so that no two officers of the same rank or regiment coincide in any row or column?
 <h6> </h6>
-Problemas como este ya se habían planteado anteriormente como el de el frances Jacques Ozanam el cual plantea colocar los reyes, reinas, jotas y ases de una baraja de cartas, formando un cuadrado 4 x 4, tal que cada fila y cada columna contenga una vez y solo una vez, cada una de las figuras y cada uno de los palos.
+Similar problems had been posed earlier, like Jacques Ozanam's French puzzle, placing kings, queens, jacks, and aces from a deck of cards in a 4x4 square so that each row and column contains each figure and suit exactly once.
 <h6> </h6>
-Euler pudo resolver varios cuadrados latinos incluso de orden mas grande que 6, pero fue incapaz de resolver el de 6 x 6, es decir, el de los 36 oficiales, así que se puso a pensar la situación en general, de modo que conjeturó que no existe solución cuando el orden es un número par n ≡ 2 (mod 4) (Recordemos lo que significa 'ser congruente': n ≡ 2 (mod 4), quiere decir que n – 2 es un múltiplo de 4, o sea n no podía ser 2, 6, 10, 14, 16, 22, …). En resumen, que la disposición de n² oficiales con las condiciones descritas sólo era posible cuando n fuera impar o múltiplo de 4.
+Euler solved various Latin squares, even of order greater than 6, but struggled with the 6x6 square, i.e., the 36 officers' problem. He conjectured that there is no solution when the order is an even number n ≡ 2 (mod 4) (recall 'being congruent': n ≡ 2 (mod 4) means n - 2 is a multiple of 4, i.e., n couldn't be 2, 6, 10, 14, 16, 22, …). In summary, the arrangement of n² officers with the described conditions was only possible when n is odd or a multiple of 4.
 <h6></h6>
-En ambos problemas debemos compaginar dos condiciones. En uno el ejército y el rango, y en el otro, la carta y el palo al que pertenece.
+Both problems involve reconciling two conditions: army and rank in one, and card and suit in the other.
 <h6></h6>
-Los dos cuadrados latinos que forman un cuadrado greco-latino se dice que son cuadrados latinos ortogonales.
+The two Latin squares forming a Greco-Latin square are said to be mutually orthogonal.
 <h6></h6>
 
 [![Imagen-2-580x167.png](https://i.postimg.cc/jStvXh3m/Imagen-2-580x167.png)](https://postimg.cc/HVvQWbg9)
 <h6></h6>
-<sub> fig. 3 Ejemplo de 2 cuarados latinos mutuamente ortogonales </sub>
+<sub> Fig. 3 Example of 2 mutually orthogonal Latin squares </sub>
 
 <h3 align="left"> Fundamentos matematicos </h3>
 <h4>Definición: Ortogonal</h4>
