@@ -99,6 +99,9 @@ Si un cuadrado latino es ortogonal a otro, las operaciones internas (permutacion
 
 
 ## Funcionalidad del proyecto
+°Generar cuadrados latinos de orden n≤6
+°Encontrar cuadrados latinos mutuamente ortogonalds (MOLS) de orden 3≤n≤5
+°Comprobar que no existen 2 cuadrados latinos mutuamente ortogonales de orden 6
 
 
 
