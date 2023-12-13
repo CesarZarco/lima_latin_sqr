@@ -1,18 +1,19 @@
-def latin_square(square, color, N):
+TOTAL_SOLUTIONS = 0  # Variable to track the total solutions found
+SOLUTIONS = []  # List to store the found solutions
+
+def latin_square(square, color):
     """
     Main function to initiate the generation of a Latin square.
 
     Args:
     - square (list): The Latin square under construction.
     - color (int): The current color being placed in the square.
-    - N (int): Order of latin square
 
     This function uses backtracking to explore all possible completions of the Latin square.
     """
     global TOTAL_SOLUTIONS, SOLUTIONS, N
-    
-    TOTAL_SOLUTIONS = 0  # Variable to track the total solutions found
-    SOLUTIONS = []  # List to store the found solutions
+
+    N = len(square)
 
     for possible_solution in completions(square, color):
         if possible(possible_solution):
@@ -81,14 +82,13 @@ def possible(square):
 
     return True
 
-def completions(square, color, N):
+def completions(square, color):
     """
     Generate all possible completions for a row of the Latin square.
 
     Args:
     - square (list): The Latin square.
     - color (int): The current color being placed in the square.
-    - N (int): The order of the Latin square.
 
     Returns:
     - list: List of possible completions for the row.
@@ -98,12 +98,12 @@ def completions(square, color, N):
     for j in range(N):
         if square[0][j] == 0:
             square[0][j] = color
-            completions_recursive(completions_list, square, color, 1, N)  # Pasa N a completions_recursive
+            completions_recursive(completions_list, square, color, 1)
             square[0][j] = 0
 
     return completions_list
 
-def completions_recursive(completions_list, square, color, row, N):
+def completions_recursive(completions_list, square, color, row):
     """
     Recursive function to generate completions for the Latin square.
 
@@ -112,18 +112,15 @@ def completions_recursive(completions_list, square, color, row, N):
     - square (list): The Latin square.
     - color (int): The current color being placed in the square.
     - row (int): The current row being processed.
-    - N (int): The order of the Latin square.
 
     This function explores all possible completions for a given row and color.
     """
     for j in range(N):
         if square[row][j] == 0:
             square[row][j] = color
-            if possible(square, N):  # Pasa N a la función possible
+            if possible(square):
                 if row + 1 < N:
-                    completions_recursive(completions_list, square, color, row + 1, N)
+                    completions_recursive(completions_list, square, color, row + 1)
                 else:
                     completions_list.append([row[:] for row in square])
             square[row][j] = 0
-
-    return TOTAL_SOLUTIONS
