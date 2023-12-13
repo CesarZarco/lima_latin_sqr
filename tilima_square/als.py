@@ -25,6 +25,8 @@ def latin_square(square, color):
                     if color + 1 <= N:
                         latin_square(possible_solution, color + 1)
 
+    return TOTAL_SOLUTIONS
+
 def is_solution(square):
     """
     Check if a given square is a complete Latin square.
@@ -131,5 +133,3 @@ def completions_recursive(completions_list, square, color, row):
                 else:
                     completions_list.append([row[:] for row in square])
             square[row][j] = 0
-
-    return TOTAL_SOLUTIONS
