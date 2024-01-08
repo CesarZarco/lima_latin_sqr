@@ -10,7 +10,7 @@
 
 2. [Project development](#project-development)
 
-3. [Project funtionality](#project-functionality)
+3. [Project functionality](#project-functionality)
 
 4. [Autors](#autors)
 
@@ -123,3 +123,4 @@ If one Latin square is orthogonal to another, internal operations (permutation b
 
 
 ## Conclusion
+There are no two mutually orthogonal squares of order 6
