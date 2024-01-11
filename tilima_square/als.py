@@ -27,29 +27,43 @@ def total_latin_square(N):
 
 def latin_square(square, color):
     """
-    Main function to initiate the generation of a Latin square.
+    Main function to print the Latin squares.
 
     Args:
-    - square (list): The Latin square under construction.
-    - color (int): The current color being placed in the square.
+    - N (int): Order of the Latin squares required.
 
-    This function uses backtracking to explore all possible completions of the Latin square.
+    This function only calls latin_square to show results
     """
-    global TOTAL_SOLUTIONS, SOLUTIONS
+    
+    global SOLUTIONS
+    square = [[0 for _ in range(N)] for _ in range(N)]
+    
+    if not isinstance(N, int) or N <= 0:
+        raise ValueError("N must be a positive integer.")
+    
+    if N == 1:
+        print(f'Total solutions found: 1')
+        print(f'Solutions found: [1]')
+    else:
+        if type == 'TOTAL':
+            print(f'Total solutions found: {len(total_latin_square(square,1))}')
+            print(f'Solutions found: ')
+            for solution in SOLUTIONS:
+                print(solution)
 
-    N = len(square)
+        if type == 'REDUCED':
+            print(f'Total solutions found: {len(reduced_latin_square(square,1))}')
+            print(f'Solutions found: ')
+            for solution in SOLUTIONS:
+                print(solution)
 
-    for possible_solution in completions(square, color):
-        if possible(possible_solution):
-            if is_solution(possible_solution):
-                TOTAL_SOLUTIONS += 1
-                SOLUTIONS.append(possible_solution)
-            else:
-                if completable(possible_solution):
-                    if color + 1 <= N:
-                        latin_square(possible_solution, color + 1)
-
-    return TOTAL_SOLUTIONS
+        if type == 'STANDARD':
+            print(f'Total solutions found: {len(standard_latin_square(square,1))}')
+            print(f'Solutions found: ')
+            for solution in SOLUTIONS:
+                print(solution)
+    # Return to 0 de values
+    SOLUTIONS = []
 
 def is_solution(square):
     """
