@@ -61,26 +61,6 @@ def possible(square):
 
     return True
 
-def reduced_completions(square, color):
-    """
-    Generate all possible completions for a row of the Latin square.
-
-    Args:
-    - square (list): The Latin square.
-    - color (int): The current color being placed in the square.
-
-    Returns:
-    - list: List of possible completions for the row.
-    """
-    completions_list = []
-
-    if square[0][color-1] == 0:
-        square[0][color-1] = color
-        completions_recursive(completions_list, square, color, 1)
-        square[0][color-1] = 0
-
-    return completions_list
-
 def standard_completions(square, color):
     """
     Generate all possible completions for a row of the Latin square.
