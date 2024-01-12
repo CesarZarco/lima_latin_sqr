@@ -61,54 +61,6 @@ def possible(square):
 
     return True
 
-
-def completions(square, color):
-    """
-    Generate all possible completions for a row of the Latin square.
-
-    Args:
-    - square (list): The Latin square.
-    - color (int): The current color being placed in the square.
-
-    Returns:
-    - list: List of possible completions for the row.
-    """
-    completions_list = []
-    N = len(square)
-
-    for j in range(N):
-        if square[0][j] == 0:
-            square[0][j] = color
-            completions_recursive(completions_list, square, color, 1)
-            square[0][j] = 0
-
-    return completions_list
-
-
-def completions_recursive(completions_list, square, color, row):
-    """
-    Recursive function to generate completions for the Latin square.
-
-    Args:
-    - completions_list (list): List to store completions.
-    - square (list): The Latin square.
-    - color (int): The current color being placed in the square.
-    - row (int): The current row being processed.
-
-    This function explores all possible completions for a given row and color.
-    """
-    N = len(square)
-    
-    for j in range(N):
-        if square[row][j] == 0:
-            square[row][j] = color
-            if possible(square):
-                if row + 1 < N:
-                    completions_recursive(completions_list, square, color, row + 1)
-                else:
-                    completions_list.append([row[:] for row in square])
-            square[row][j] = 0
-
 def reduced_completions(square, color):
     """
     Generate all possible completions for a row of the Latin square.
