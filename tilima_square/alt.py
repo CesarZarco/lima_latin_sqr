@@ -1,3 +1,6 @@
+# Import the functions from aux.py
+from aux import standard_completions, possible, is_solution, completable
+
 def standard_latin_square(square, color):
     """
     Main function to initiate the generation of a Latin square.
