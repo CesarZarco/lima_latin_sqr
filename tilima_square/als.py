@@ -1,3 +1,6 @@
+#Import the functions from aux.py
+from aux import completions, possible, is_solution, completable, reduced_latin_square, standard_latin_square
+
 SOLUTIONS = []  # List to store the found solutions
 
 def total_latin_square(N):
