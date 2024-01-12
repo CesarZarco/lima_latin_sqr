@@ -1,5 +1,5 @@
 # Import the functions from aux.py
-from aux import reduced_completions, possible, is_solution, completable
+from aux import *
 
 def reduced_latin_square(square, color):
     """
@@ -24,3 +24,23 @@ def reduced_latin_square(square, color):
                     if color + 1 <= N:
                         reduced_latin_square(possible_solution, color + 1)
     return SOLUTIONS
+
+def reduced_completions(square, color):
+    """
+    Generate all possible completions for a row of the Latin square.
+
+    Args:
+    - square (list): The Latin square.
+    - color (int): The current color being placed in the square.
+
+    Returns:
+    - list: List of possible completions for the row.
+    """
+    completions_list = []
+
+    if square[0][color-1] == 0:
+        square[0][color-1] = color
+        completions_recursive(completions_list, square, color, 1)
+        square[0][color-1] = 0
+
+    return completions_list
