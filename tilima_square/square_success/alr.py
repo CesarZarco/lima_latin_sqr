@@ -1,5 +1,6 @@
 # Import the functions from aux.py
 from aux import *
+from alr import completions_recursive
 
 def reduced_latin_square(square, color):
     """
