@@ -1,3 +1,8 @@
+#Import all auxiliar files
+from als import *
+from alr import *
+from alt import *
+
 SOLUTIONS = []
 def latin_square(square, color):
     """
