@@ -1,5 +1,7 @@
-#Import the functions from aux.py
-from aux import completions, possible, is_solution, completable, reduced_latin_square, standard_latin_square
+#Import the functions from aux.py, alr.py, alt.py
+from aux import completions, possible, is_solution, completable, 
+from alr import reduced_latin_square 
+from alt import standard_latin_square
 
 SOLUTIONS = []  # List to store the found solutions
 
