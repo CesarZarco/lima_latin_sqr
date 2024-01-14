@@ -169,3 +169,30 @@ def are_orthogonal(list_squares):
 
     # If all pairs satisfy the conditions, return True
     return True
+
+def mols_generator(N):
+     """
+    Generate combinations of squares that are MOLS.
+
+    Parameters:
+    - N (int): Order of the MOLS to be construct.
+
+    Yields:
+    - List[List[int]]: Each yielded combination is a list of N-1 vectors, where each vector is represented as a list of integers.
+
+    The function uses standard_generator, reduced_generator, generate_combinations, and are_orthogonal functions to generate and filter combinations based on specific criteria.
+    """
+    # Create an empty square matrix of size N x N
+    square = [[0 for _ in range(N)] for _ in range(N)]
+
+    # Generate a standardized square matrix with specific properties
+    standarized = standard_generator(square, 1)
+    permutations = reduced_generator(standarized, N)
+    for permutation in permutations:
+        # Check if the vectors in the combination are orthogonal
+        combinations = generate_combinations(permutation, N-1)
+        for combination in combinations:
+            if are_orthogonal(combination):
+                yield combination
+
+
