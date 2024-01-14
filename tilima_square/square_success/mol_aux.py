@@ -40,7 +40,6 @@ def standard_generator(square, color):
 
     This function uses backtracking to explore all possible completions of the Latin square.
     """
-    
 
     N = len(square)
 
@@ -53,4 +52,27 @@ def standard_generator(square, color):
                     if color + 1 <= N:
                         yield from standard_generator(possible_solution, color + 1)
 
+def reduced_generator(standardized,N):
+    """
+    Generate reduced Latin squares by permutating rows of standardized Latin squares.
 
+    Args:
+    - standarized (list): The list of standardized Latin squares.
+
+    This function permutes rows of a standardized Latin square to explore all possible completions of the reduced Latin square.
+    """
+
+    for standard in standardized:
+        reduced = []
+        
+        # Generate new square to complete
+        square = [[0 for _ in range(N)] for _ in range(N)]
+        for j in range(N):
+            square[0][j] = j + 1
+
+        for permutation in generate_permutations(standard[1:]):
+            for i in range(len(permutation)):
+                for j in range(N):
+                    square[i + 1][j] = permutation[i][j]
+            reduced.append([row[:] for row in square])
+        yield reduced
