@@ -36,7 +36,7 @@ def reduced_generator(standardized,N):
 
     This function permutes rows of a standardized Latin square to explore all possible completions of the reduced Latin square.
     """
-
+    
     for standard in standardized:
         reduced = []
         
@@ -44,7 +44,7 @@ def reduced_generator(standardized,N):
         square = [[0 for _ in range(N)] for _ in range(N)]
         for j in range(N):
             square[0][j] = j + 1
-
+        # Complete a new square with each permutation
         for permutation in generate_permutations(standard[1:]):
             for i in range(len(permutation)):
                 for j in range(N):
@@ -71,9 +71,69 @@ def useful(list, N):
     
     # Check list
     cont = {x: 0 for x in range(1, N + 1)}
+    
+    # Count occurrences of each element in the list
     for j in range(N-1):
         if list[j] != 0:
             cont[list[j]] += 1
+    # Check if any element appears more than once
     if any(value > 1 for value in cont.values()):
             return False
     return True
+
+def usable(list_squares, aux, i, j):
+    """
+    Checks if an auxiliary list (represented by 'aux') can be placed at position (i, j)
+    in the list of squares (represented by 'list_squares') without violating the game rules.
+
+    Parameters:
+    - list_squares (list): A 3D matrix of squares represented as a list of lists of lists.
+    - aux (list): Auxiliary list being attempted to be placed at position (i, j).
+    - i (int): Row index where the auxiliary square is being attempted to be placed.
+    - j (int): Column index where the auxiliary square is being attempted to be placed.
+
+    Returns:
+    - bool: True if the auxiliary square can be placed at position (i, j) without violating the rules,
+             False otherwise.
+    """
+    N = len(list_squares[0])  # Order of each square
+    M = len(list_squares)     # Number of squares in the list
+
+    # Iterate over the list of squares 
+    for m in range(0, M-1):
+        # Iterate over the rows in the matrix (up to the first-to-last row)
+        for k in range(1, N):
+            # Iterate over the columns in each square
+            for l in range(N):
+                # Ignore the current position (i, j)
+                if i == k and j == l:
+                    continue
+
+                # Compare the sub-list of 'aux' with the sub-list of the matrix at position (k, l)
+                if aux[m:m+2] == aux_list(list_squares, k, l)[m:m+2]:
+                    return False  # If there is a match, the auxiliary square cannot be placed
+
+    return True  # If no matches are found, the auxiliary square can be placed at position (i, j)
+
+
+def aux_list(list_squares, i, j):
+    """
+    Returns a list representing the sub-list of the matrix 'list_squares'
+    at position (i, j) across all squares.
+
+    Parameters:
+    - list_squares (list): A 3D matrix of squares represented as a list of lists of lists.
+    - i (int): Row index within each square.
+    - j (int): Column index within each square.
+
+    Returns:
+    - list: Sub-list of the matrix at position (i, j) across all squares.
+    """
+    M = len(list_squares)            # Number of squares in the matrix
+    aux = [0 for _ in range(M)]      # Initialize an auxiliary list
+
+    # Extract the element at position (i, j) from each square and store it in the auxiliary list
+    for k in range(M):
+        aux[k] = list_squares[k][i][j]
+
+    return aux
