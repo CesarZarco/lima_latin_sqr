@@ -3,13 +3,18 @@ from sqr_aux import *
 
 def standard_latin_square(square, color):
     """
-    Main function to initiate the generation of a Latin square.
+    Generate standard Latin squares using backtracking.
+
+    This function initiates the generation of a Latin square with a given color.
 
     Args:
     - square (list): The Latin square under construction.
     - color (int): The current color being placed in the square.
 
     This function uses backtracking to explore all possible completions of the Latin square.
+
+    Returns:
+    - list: List of completed standard Latin squares.
     """
     global SOLUTIONS
 
