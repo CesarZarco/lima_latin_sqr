@@ -4,13 +4,16 @@ from alr import completions_recursive
 
 def reduced_latin_square(square, color):
     """
-    Main function to initiate the generation of a Latin square.
+    Function to initiate the generation of a Latin square.
 
     Args:
     - square (list): The Latin square under construction.
     - color (int): The current color being placed in the square.
 
     This function uses backtracking to explore all possible completions of the Latin square.
+    
+    Returns:
+    - list: List of completed reduced Latin squares.
     """
     global SOLUTIONS
 
