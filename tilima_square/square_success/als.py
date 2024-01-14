@@ -1,5 +1,5 @@
 #Import the functions from aux.py, alr.py, alt.py
-from aux import *
+from sqr_aux import *
 
 SOLUTIONS = []  # List to store the found solutions
 
