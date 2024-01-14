@@ -137,3 +137,35 @@ def aux_list(list_squares, i, j):
         aux[k] = list_squares[k][i][j]
 
     return aux
+
+def are_orthogonal(list_squares):
+    """
+    Check if a list of reduced latin squares satisfies certain orthogonality conditions 
+    based on orthogonality in Latin squares.
+
+    Parameters:
+    - list_squares (list): A list of squares represented as a 2D list.
+
+    Returns:
+    - bool: True if the list of squares is orthogonal, False otherwise. 
+    """
+
+    # Get the size of the squares (assuming all squares have the same size)
+    N = len(list_squares[0])
+
+    # Iterate through each pair of squares
+    for i in range(1, N):
+        for j in range(N):
+            # Get auxiliary information using aux_list function
+            aux = aux_list(list_squares, i, j)
+
+            # Check if the auxiliary information is useful using the useful function
+            if not useful(aux, N):
+                return False
+
+            # Check if the current square and its auxiliary information are usable
+            if not usable(list_squares, aux, i, j):
+                return False
+
+    # If all pairs satisfy the conditions, return True
+    return True
