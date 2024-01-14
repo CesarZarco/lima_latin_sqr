@@ -195,4 +195,6 @@ def mols_generator(N):
             try:
                 if are_orthogonal(combination):
                     yield combination
-                except StopIteration # Handle the case when the generator is empty
+            except StopIteration: 
+            # Handle the case when the generator is empty
+                break
