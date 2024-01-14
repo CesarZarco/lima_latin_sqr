@@ -1,34 +1,9 @@
-# Import functions from sqr_aux.py and alt.py so that standard_latin_square works
+# Import functions from sqr_aux.py, list_aux.py and alt.py so that standard_latin_square works
 from sqr_aux import *
+from list_aux import *
 from alt import standard_completions, standard_completions_recursive
 
-def generate_permutations(elements):
-    """
-    Generate all permutations of a list of elements.
 
-    Parameters:
-    - elements (list): The list of elements to generate permutations from.
-
-    Returns:
-    - list of lists: A list containing all permutations of the input elements.
-      Each permutation is represented as a list.
-    """
-    if len(elements) == 0:
-        # Base case: an empty list has one permutation, an empty list.
-        return [[]]
-
-    permutations = []
-    for i in range(len(elements)):
-        # Select the current element and exclude it from the remaining elements.
-        current_element = elements[i]
-        remaining_elements = elements[:i] + elements[i + 1:]
-
-        # Recursively generate permutations for the remaining elements.
-        for p in generate_permutations(remaining_elements):
-            # Combine the current element with each permutation of the remaining elements.
-            permutations.append([current_element] + p)
-
-    return permutations
 
 def standard_generator(square, color):
     """
@@ -76,3 +51,29 @@ def reduced_generator(standardized,N):
                     square[i + 1][j] = permutation[i][j]
             reduced.append([row[:] for row in square])
         yield reduced
+
+
+def useful(list, N):
+    """
+    Check if a list represents a useful configuration.
+
+    Args:
+    - lst (list): The input list to be checked.
+
+    Returns:
+    - bool: True if the input list represents a useful configuration, False otherwise.
+
+    This function checks the input list for useful properties:
+    1. It verifies that each element in the list appears at most once.
+    2. If an element appears more than once, the function returns False, indicating the configuration is not useful.
+    3. If all elements appear at most once, the function returns True, indicating a useful configuration.
+    """
+    
+    # Check list
+    cont = {x: 0 for x in range(1, N + 1)}
+    for j in range(N-1):
+        if list[j] != 0:
+            cont[list[j]] += 1
+    if any(value > 1 for value in cont.values()):
+            return False
+    return True
