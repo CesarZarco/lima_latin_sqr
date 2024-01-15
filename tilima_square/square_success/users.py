@@ -31,9 +31,9 @@ def latin_square(N, type = 'TOTAL'):
         sols = total_latin_square(square,1)
         print(f'Total solutions found: {len(sols)}')
         print(f'Solutions found: ')
-        sols = []
         for solution in sols:
             print(solution)
+        sols = []
         SOLUTIONS = []
     elif type == 'REDUCED':
         sols = reduced_latin_square(square,1)
