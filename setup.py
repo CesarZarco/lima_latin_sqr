@@ -7,5 +7,5 @@ setup(name='tilima_square',
       author='Cesar Zarco, Carlos Haro',
       author_email='za440752@uaeh.edu.mx, ha419189@uaeh.edu.mx',
       license='MIT',
-      packages=['tilima_square'],
+      packages=find_packages(),
       zip_safe=False)
