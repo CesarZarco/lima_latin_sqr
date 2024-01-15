@@ -3,7 +3,7 @@ from tilima_square.square_success.sqr_aux import *
 from tilima_square.square_success.als import completions_recursive
 from tilima_square.square_success.globals import *
 
-# SOLUTIONS = []  # List to store the found solutions
+SOLUTIONS = []  # List to store the found solutions
 
 def reduced_latin_square(square, color):
     """
@@ -18,7 +18,7 @@ def reduced_latin_square(square, color):
     Returns:
     - list: List of completed reduced Latin squares.
     """
-    #global SOLUTIONS
+    global SOLUTIONS
 
     N = len(square)
 
