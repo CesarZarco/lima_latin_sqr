@@ -6,6 +6,11 @@ from tilima_square.square_success.mol_aux import *
 from tilima_square.square_success.globals import *
 
 
+def reset_global():
+    global SOLUTIONS 
+    SOLUTIONS = []
+
+
 def latin_square(N, type = 'TOTAL'):
     """
     Main function to print the Latin squares.
@@ -20,8 +25,7 @@ def latin_square(N, type = 'TOTAL'):
     This function only show results
     """
 
-    #global SOLUTIONS
-    SOLUTIONS = []
+    reset_global()
     square = [[0 for _ in range(N)] for _ in range(N)]
     
     if not isinstance(N, int) or N <= 1:
@@ -33,7 +37,6 @@ def latin_square(N, type = 'TOTAL'):
         print(f'Solutions found: ')
         for solution in sols:
             print(solution)
-        sols = []
         SOLUTIONS = []
     elif type == 'REDUCED':
         sols = reduced_latin_square(square,1)
