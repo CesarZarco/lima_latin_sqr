@@ -2,8 +2,9 @@
 from tilima_square.square_success.sqr_aux import *
 
 def total_latin_square(square, color):
-    SOLUTIONS = []  # List to store the found solutions
+    
     global SOLUTIONS
+    SOLUTIONS = []  # List to store the found solutions
     return total_latin_square(square, color)
 
 def total_latin_square2(square, color):
