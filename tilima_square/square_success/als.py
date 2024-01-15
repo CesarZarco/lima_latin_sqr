@@ -1,9 +1,12 @@
 #Import the functions from aux.py, alr.py, alt.py
 from tilima_square.square_success.sqr_aux import *
 
-SOLUTIONS = []  # List to store the found solutions
-
 def total_latin_square(square, color):
+    SOLUTIONS = []  # List to store the found solutions
+    global SOLUTIONS
+    return total_latin_square(square, color)
+
+def total_latin_square2(square, color):
     """
     Function to initiate the generation of a Latin square.
 
@@ -27,10 +30,9 @@ def total_latin_square(square, color):
             else:
                 if completable(possible_solution):
                     if color + 1 <= N:
-                        total_latin_square(possible_solution, color + 1)
-    sol = SOLUTIONS
-    SOLUTIONS = []
-    return sol
+                        total_latin_square2(possible_solution, color + 1)
+
+    return SOLUTIONS
 
 def completions(square, color):
     """
