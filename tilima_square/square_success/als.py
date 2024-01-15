@@ -28,8 +28,9 @@ def total_latin_square(square, color):
                 if completable(possible_solution):
                     if color + 1 <= N:
                         total_latin_square(possible_solution, color + 1)
-
-    return SOLUTIONS
+    sol = SOLUTIONS
+    SOLUTIONS = []
+    return sol
 
 def completions(square, color):
     """
