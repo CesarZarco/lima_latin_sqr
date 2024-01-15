@@ -2,6 +2,7 @@
 from als import *
 from alr import *
 from alt import *
+from mol_aux import *
 
 SOLUTIONS = []
 def latin_square(square, color):
@@ -43,3 +44,30 @@ def latin_square(square, color):
                 print(solution)
     # Return to 0 de values
     SOLUTIONS = []
+
+def mols(N):
+    
+    """
+    Main function, calls mols and prints results while the user says yes.
+
+    Parameters:
+        N (int): Order of the MOLS to be shown.
+    """
+    
+    if not isinstance(N, int) or N <= 1:
+        raise ValueError("N must be a positive integer greater that 1.")
+    
+    combinations = mols_generator(N) 
+    while True:
+    # Tu código aquí
+        squares = next(combinations)
+        all = []
+        for square in squares:
+            all.append([row[:] for row in square])
+        print(all)
+            
+    
+        answer = input("Would you like another? (y/n): ").lower()
+    
+        if answer != 'y':
+            break  # leave oherwise
