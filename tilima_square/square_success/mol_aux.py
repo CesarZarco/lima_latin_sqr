@@ -192,10 +192,7 @@ def mols_generator(N):
         # Check if the vectors in the combination are orthogonal
         combinations = generate_combinations(permutation, N-1)
         for combination in combinations:
-            try:
-                if are_orthogonal(combination):
-                    yield combination
-            except StopIteration: 
-            # Handle the case when the generator is empty
-                print("is all")
-                return
+            if are_orthogonal(combination):
+                yield combination
+                
+        print("is all")
