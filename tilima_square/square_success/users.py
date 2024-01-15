@@ -4,7 +4,7 @@ from tilima_square.square_success.alr import *
 from tilima_square.square_success.alt import *
 from tilima_square.square_success.mol_aux import *
 
-SOLUTIONS = []
+
 def latin_square(N, type = 'TOTAL'):
     """
     Main function to print the Latin squares.
@@ -18,7 +18,7 @@ def latin_square(N, type = 'TOTAL'):
 
     This function only show results
     """
-    
+    SOLUTIONS = []
     global SOLUTIONS
     square = [[0 for _ in range(N)] for _ in range(N)]
     
