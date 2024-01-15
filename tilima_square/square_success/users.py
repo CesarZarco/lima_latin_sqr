@@ -26,9 +26,10 @@ def latin_square(N, type = 'TOTAL'):
         raise ValueError("N must be a positive integer greater or equal to 2.")
     
     if type == 'TOTAL':
-        print(f'Total solutions found: {len(total_latin_square(square,1))}')
+        sols = total_latin_square(square,1)
+        print(f'Total solutions found: {len(sols)}')
         print(f'Solutions found: ')
-        for solution in SOLUTIONS:
+        for solution in sols:
             print(solution)
 
     elif type == 'REDUCED':
