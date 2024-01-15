@@ -1,7 +1,7 @@
 # Import functions from sqr_aux.py, list_aux.py and alt.py so that standard_latin_square works
-from sqr_aux import *
-from list_aux import *
-from alt import standard_completions, standard_completions_recursive
+from tilima_square.square_success.sqr_aux import *
+from tilima_square.square_success.list_aux import *
+from tilima_square.square_success.alt import standard_completions, standard_completions_recursive
 
 
 
