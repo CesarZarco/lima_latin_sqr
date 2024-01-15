@@ -195,4 +195,5 @@ def mols_generator(N):
             if are_orthogonal(combination):
                 yield combination
                 
-        print("is all")
+    print("is all")
+    return None
