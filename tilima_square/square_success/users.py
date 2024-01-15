@@ -31,18 +31,21 @@ def latin_square(N, type = 'TOTAL'):
         print(f'Solutions found: ')
         for solution in sols:
             print(solution)
-
+        SOLUTIONS = []
     elif type == 'REDUCED':
-        print(f'Total solutions found: {len(reduced_latin_square(square,1))}')
+        sols = reduced_latin_square(square,1)
+        print(f'Total solutions found: {len(sols)}')
         print(f'Solutions found: ')
-        for solution in SOLUTIONS:
+        for solution in sols:
             print(solution)
-
+        SOLUTIONS = []
     elif type == 'STANDARD':
-        print(f'Total solutions found: {len(standard_latin_square(square,1))}')
+        sols = standard_latin_square(square,1)
+        print(f'Total solutions found: {len(sols)}')
         print(f'Solutions found: ')
-        for solution in SOLUTIONS:
+        for solution in sols:
             print(solution)
+        SOLUTIONS = []
     else:
         print("Invalid latin_square_type. Please choose 'TOTAL', 'REDUCED', or 'STANDARD'.")
     # Reset variable
