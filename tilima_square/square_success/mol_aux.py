@@ -171,7 +171,7 @@ def are_orthogonal(list_squares):
     return True
 
 def mols_generator(N):
-     """
+    """
     Generate combinations of squares that are MOLS.
 
     Parameters:
