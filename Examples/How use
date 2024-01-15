@@ -1,0 +1,17 @@
+Este archivo contiene un código de un ejmeplo de como usar la función latin_square() de square_success
+
+pip install git+https://github.com/CesarZarco/lima_latin_sqr.git
+
+from tilima_square.square_success import*
+
+latin_square(3) #Return all latin squares of nxn lenght
+
+try:
+    mols(3)
+except StopIteration: 
+    print('is all')
+
+try:
+    next(a)
+except StopIteration: 
+    print('is all')
