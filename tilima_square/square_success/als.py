@@ -1,5 +1,5 @@
 #Import the functions from aux.py, alr.py, alt.py
-from sqr_aux import *
+from tilima_square.square_success.sqr_aux import *
 
 SOLUTIONS = []  # List to store the found solutions
 
