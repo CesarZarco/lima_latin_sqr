@@ -2,9 +2,13 @@
 from tilima_square.square_success.sqr_aux import *
 
 
-SOLUTIONS = []  # List to store the found solutions
-
 def standard_latin_square(square, color):
+    
+    global SOLUTIONS
+    SOLUTIONS = []  # List to store the found solutions
+    return standard_latin_square2(square, color)
+
+def standard_latin_square2(square, color):
     """
     Generate standard Latin squares using backtracking.
 
@@ -30,7 +34,7 @@ def standard_latin_square(square, color):
             else:
                 if completable(possible_solution):
                     if color + 1 <= N:
-                        standard_latin_square(possible_solution, color + 1)
+                        standard_latin_square2(possible_solution, color + 1)
     return SOLUTIONS
     
 def standard_completions(square, color):
