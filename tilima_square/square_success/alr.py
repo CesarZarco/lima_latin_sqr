@@ -2,9 +2,13 @@
 from tilima_square.square_success.sqr_aux import *
 from tilima_square.square_success.als import completions_recursive
 
-SOLUTIONS = []  # List to store the found solutions
-
 def reduced_latin_square(square, color):
+    
+    global SOLUTIONS
+    SOLUTIONS = []  # List to store the found solutions
+    return reduced_latin_square2(square, color)
+
+def reduced_latin_square2(square, color):
     """
     Function to initiate the generation of a Latin square.
 
@@ -28,7 +32,7 @@ def reduced_latin_square(square, color):
             else:
                 if completable(possible_solution):
                     if color + 1 <= N:
-                        reduced_latin_square(possible_solution, color + 1)
+                        reduced_latin_square2(possible_solution, color + 1)
     return SOLUTIONS
 
 def reduced_completions(square, color):
