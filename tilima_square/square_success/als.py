@@ -1,7 +1,8 @@
 #Import the functions from aux.py, alr.py, alt.py
 from tilima_square.square_success.sqr_aux import *
+from globals import *
 
-SOLUTIONS = []  # List to store the found solutions
+#SOLUTIONS = []  # List to store the found solutions
 
 def total_latin_square(square, color):
     """
@@ -16,7 +17,7 @@ def total_latin_square(square, color):
     Returns:
     - list: List of all Latin squares without conditions.
     """
-    global SOLUTIONS
+    #global SOLUTIONS
 
     N = len(square)
 
