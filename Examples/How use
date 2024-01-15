@@ -17,6 +17,6 @@ except StopIteration:
 a = mols_generator(n)
 
 try:
-    next(a)
+    print(next(a))
 except StopIteration: 
     print('is all')
