@@ -1,4 +1,5 @@
-Este archivo contiene un código de un ejmeplo de como usar la función latin_square(), mols() y a = mols_generator() de square_success
+This file contains code for an example of how to use the latin_square(), mols() and a = mols_generator() function of square_success
+(when copying the lines of code to an IDE, do it per cell, except those that have the try-except format)
 
 pip install git+https://github.com/CesarZarco/lima_latin_sqr.git
 
