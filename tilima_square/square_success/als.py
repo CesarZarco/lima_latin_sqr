@@ -5,7 +5,7 @@ def total_latin_square(square, color):
     
     global SOLUTIONS
     SOLUTIONS = []  # List to store the found solutions
-    return total_latin_square(square, color)
+    return total_latin_square2(square, color)
 
 def total_latin_square2(square, color):
     """
