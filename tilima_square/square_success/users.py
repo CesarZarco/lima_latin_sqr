@@ -1,8 +1,8 @@
 #Import all auxiliar files
-from als import *
-from alr import *
-from alt import *
-from mol_aux import *
+from tilima_square.square_success.als import *
+from tilima_square.square_success.alr import *
+from tilima_square.square_success.alt import *
+from tilima_square.square_success.mol_aux import *
 
 SOLUTIONS = []
 def latin_square(square, color):
