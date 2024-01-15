@@ -1,18 +1,20 @@
-This file contains code for an example of how to use the latin_square(), mols() and a = mols_generator() function of square_success
-(when copying the lines of code to an IDE, do it per cell, except those that have the try-except format)
+#This file contains code for an example of how to use the latin_square(), mols() and a = mols_generator() function of square_success
+#(when copying the lines of code to an IDE, do it per cell, except those that have the try-except format)
 
 pip install git+https://github.com/CesarZarco/lima_latin_sqr.git
 
 from tilima_square.square_success import*
 
-latin_square(3) #Return all latin squares of nxn lenght
+#in this code 'n' is the length of latin squares, you must change n for a some number
+
+latin_square(n) #Return all latin squares of nxn lenght
 
 try:
-    mols(3)
+    mols(n)
 except StopIteration: 
     print('is all')
 
-a = mols_generator(4)
+a = mols_generator(n)
 
 try:
     next(a)
