@@ -1,4 +1,4 @@
-Este archivo contiene un código de un ejmeplo de como usar la función latin_square() de square_success
+Este archivo contiene un código de un ejmeplo de como usar la función latin_square(), mols() y a = mols_generator() de square_success
 
 pip install git+https://github.com/CesarZarco/lima_latin_sqr.git
 
@@ -10,6 +10,8 @@ try:
     mols(3)
 except StopIteration: 
     print('is all')
+
+a = mols_generator(4)
 
 try:
     next(a)
