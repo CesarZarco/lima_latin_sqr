@@ -3,7 +3,7 @@ from tilima_square.square_success.sqr_aux import *
 
 SOLUTIONS = []  # List to store the found solutions
 
-def total_latin_square(N):
+def total_latin_square(square, color):
     """
     Function to initiate the generation of a Latin square.
 
