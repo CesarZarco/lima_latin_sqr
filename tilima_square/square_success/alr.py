@@ -1,6 +1,6 @@
 # Import the functions from aux.py
-from sqr_aux import *
-from als import completions_recursive
+from tilima_square.square_success.sqr_aux import *
+from tilima_square.square_success.als import completions_recursive
 
 def reduced_latin_square(square, color):
     """
