@@ -68,7 +68,6 @@ def mols(N):
     
     combinations = mols_generator(N) 
     while True:
-    # Tu código aquí
         squares = next(combinations)
         all = []
         for square in squares:
