@@ -3,7 +3,7 @@ from tilima_square.square_success.als import *
 from tilima_square.square_success.alr import *
 from tilima_square.square_success.alt import *
 from tilima_square.square_success.mol_aux import *
-from globals import *
+from tilima_square.square_success.globals import *
 
 
 def latin_square(N, type = 'TOTAL'):
