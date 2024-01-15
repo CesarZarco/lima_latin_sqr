@@ -1,7 +1,7 @@
 #Import the functions from aux.py, alr.py, alt.py
 from tilima_square.square_success.sqr_aux import *
 
-#SOLUTIONS = []  # List to store the found solutions
+SOLUTIONS = []  # List to store the found solutions
 
 def total_latin_square(square, color):
     """
