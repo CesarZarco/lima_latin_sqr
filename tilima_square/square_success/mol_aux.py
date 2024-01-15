@@ -197,4 +197,5 @@ def mols_generator(N):
                     yield combination
             except StopIteration: 
             # Handle the case when the generator is empty
-                print("if all")
+                print("is all")
+                return
